@@ -1,0 +1,6 @@
+@media (max-width: 375px) {
+	.header {
+		height: 100vw;
+		background-image: "../img/";
+	}
+}
