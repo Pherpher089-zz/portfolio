@@ -1,7 +1,7 @@
+//Packages
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 
+//Components
 import NavBar from "./Components/NavBar.js";
 import Header from "./Components/Header.js";
 import AboutMe from "./Components/AboutMe.js";

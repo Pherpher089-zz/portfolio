@@ -1,16 +1,37 @@
-import React from "react";
-
+import React, { useState } from "react";
+import "./NavBar.scss";
 function NavBar(props) {
+	const [navState, setNavState] = useState("Close");
+	const onClickMenu = (e) => {
+		if (navState === "Close") {
+			setNavState("Open");
+		} else {
+			setNavState("Close");
+		}
+	};
+
+	if (navState) {
+	}
+
 	return (
-		<nav>
-			<h1>Chris Tutor</h1>
-			<div>
-				/*This actually needs to be a drop down box*/
-				<a>About Me</a>
-				<a>Portfolio</a>
-				<a>Contact Me</a>
-			</div>
-		</nav>
+		<>
+			<nav className="Container">
+				<div className="NavBar">
+					<h1>Chris Tutor - Web Developer</h1>
+					<button onClick={onClickMenu}>|||</button>
+					<div className="NavBarBig">
+						<button className="Link">About Me</button>
+						<button className="Link">Portfolio</button>
+						<button className="Link">Contact Me</button>
+					</div>
+				</div>
+				<div className={navState + " DropDown"}>
+					<div className="Link">About Me</div>
+					<div className="Link">Portfolio</div>
+					<div className="Link">Contact Me</div>
+				</div>
+			</nav>
+		</>
 	);
 }
 
