@@ -26,8 +26,18 @@ function NavBar(props) {
 					</div>
 				</div>
 				<div className={navState + " DropDown"}>
-					<div className="Link">About Me</div>
-					<div className="Link">Portfolio</div>
+					<div
+						onClick={() => props.scrollTo("AboutMe")}
+						className="Link"
+					>
+						About Me
+					</div>
+					<div
+						onClick={() => props.scrollTo("Projects")}
+						className="Link"
+					>
+						Projects
+					</div>
 					<div className="Link">Contact Me</div>
 				</div>
 			</nav>

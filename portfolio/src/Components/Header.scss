@@ -9,12 +9,13 @@
 		align-items: center;
 		justify-content: space-around;
 		.ProfilePic-Container {
-			height: 10rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			align-items: center;
 			.ProfilePic {
+				border-radius: 50%;
+				object-fit: cover;
 				height: 15rem;
 				width: 15rem;
 				border-radius: 50%;

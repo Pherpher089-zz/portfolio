@@ -1,5 +1,6 @@
 //Packages
 import React from "react";
+
 //Images
 import ProfilePic from "../imgs/ProfilePic.png";
 //Styles
