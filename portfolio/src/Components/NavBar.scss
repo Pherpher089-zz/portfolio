@@ -1,0 +1,74 @@
+@media (max-width: 375px) {
+	@keyframes openMenu {
+		from {
+			height: 0rem;
+		}
+		to {
+			height: 7rem;
+		}
+	}
+	@keyframes closeMenu {
+		0% {
+			height: 7rem;
+		}
+		100% {
+			height: 0rem;
+		}
+	}
+	// :'(
+
+	.Container {
+		.NavBar {
+			width: 100vw;
+			height: 3rem;
+			background-color: black;
+			color: white;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			h1 {
+				align-self: center;
+				font-size: 1.5rem;
+				margin-left: 0.5rem;
+			}
+			button {
+				width: 10%;
+				height: 65%;
+				align-self: center;
+				margin-right: 1rem;
+			}
+			.NavBarBig {
+				display: none;
+			}
+		}
+
+		.link {
+			margin: 1rem 0rem 1rem 0rem;
+		}
+		.DropDown {
+			display: flex;
+			flex-direction: column;
+			height: 10rem;
+			align-items: center;
+			justify-content: space-around;
+			div {
+				background-color: black;
+				color: white;
+				width: 100%;
+				height: 100%;
+				border-bottom: 1px solid black;
+			}
+		}
+
+		// .Open {
+		// 	// animation-name: openMenu;
+		// 	// animation-duration: 0.5s;
+		// }
+
+		.Close {
+			// animation-name: closeMenu;
+			// animation-duration: 0.5s;
+			display: none;
+		}
+	}
+}

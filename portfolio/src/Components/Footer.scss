@@ -1,0 +1,46 @@
+.Footer {
+	margin: 1rem 0rem;
+	padding: 1rem, 1rem;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	address {
+		padding: 1rem 1rem;
+		display: flex;
+		flex-direction: column;
+		email,
+		phone {
+			margin: 0.5rem 0rem;
+
+			color: white;
+		}
+
+		a {
+			display: flex;
+			flex-direction: row;
+			margin: 0.5rem 0rem;
+			text-decoration: none;
+			color: limegreen;
+			p {
+				margin-right: 0.3rem;
+				color: white;
+			}
+		}
+	}
+
+	.Footer-Nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 1rem;
+		a {
+			margin: 0.5rem 0rem;
+			text-align: center;
+			line-height: 1.75rem;
+			width: 5rem;
+			height: 2rem;
+			color: Black;
+			background-color: white;
+		}
+	}
+}
