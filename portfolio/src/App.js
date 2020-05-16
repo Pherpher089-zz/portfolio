@@ -8,6 +8,9 @@ import AboutMe from "./Components/AboutMe.js";
 import Projects from "./Components/Projects.js";
 import Footer from "./Components/Footer.js";
 
+//Style
+import "./App.scss";
+
 function App() {
 	return (
 		<div className="App">

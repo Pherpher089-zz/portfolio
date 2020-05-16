@@ -1,0 +1,48 @@
+@media (max-width: 375px) {
+	.Header-Container {
+		height: 85vh;
+		background-image: url("../imgs/MotherBoard.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		.ProfilePic-Container {
+			height: 10rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			.ProfilePic {
+				height: 15rem;
+				width: 15rem;
+				border-radius: 50%;
+			}
+			h1 {
+				text-align: center;
+				line-height: 2rem;
+				height: 2rem;
+				width: 10rem;
+				border: 1px solid black;
+				background-color: rgba(0, 0, 0, 0.342);
+			}
+		}
+		.MissionStatement {
+			align-self: center;
+			//line-height: 2rem;
+			height: auto;
+			width: atuo;
+			padding: 1rem 1rem;
+			border: 1px solid black;
+			background-color: rgba(0, 0, 0, 0.342);
+		}
+
+		.Buttons {
+			width: 55%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}

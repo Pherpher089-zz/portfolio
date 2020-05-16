@@ -1,0 +1,73 @@
+@mixin border {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 2px solid black;
+}
+@mixin sectionAlignment {
+	align-self: center;
+	padding: 0.5rem;
+	width: 85vw;
+	@include border();
+	margin: 0.3rem 0rem;
+	h2 {
+		font-size: 1.3rem;
+		text-align: center;
+		margin: 1rem 0.5rem;
+	}
+}
+.Projects {
+	display: flex;
+	flex-direction: column;
+	.Title {
+		height: 3rem;
+		width: 85vw;
+		margin: 1rem;
+		align-self: center;
+
+		line-height: 2.5rem;
+		//padding: 1rem 0.5rem;
+		@include border();
+		h1 {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+	}
+	a {
+		margin-left: 1rem;
+		display: flex;
+		flex-direction: column;
+		color: white;
+		text-decoration: none;
+		&:hover {
+			color: limegreen;
+		}
+	}
+
+	img {
+		align-self: center;
+		height: 20rem;
+		width: 90vw;
+		object-fit: cover;
+	}
+
+	.Description {
+		@include sectionAlignment();
+		@include border();
+	}
+
+	.Tech {
+		@include sectionAlignment();
+		@include border();
+		ul {
+			margin-left: 1rem;
+			list-style-type: disc;
+		}
+		h3 {
+			margin: 1rem 0.5rem;
+		}
+	}
+
+	.Responsibilities {
+		@include sectionAlignment();
+		@include border();
+	}
+}
