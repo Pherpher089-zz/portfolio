@@ -1,80 +1,78 @@
-@media (max-width: 375px) {
-	.AboutMe-Container {
-		margin-top: 2rem;
-		h1 {
-			text-align: center;
-			margin-bottom: 1rem;
-			width: 95vw;
-			height: 2.5rem;
-			font-size: 2rem;
-		}
+.AboutMe-Container {
+	margin-top: 2rem;
+	h1 {
+		text-align: center;
+		margin-bottom: 1rem;
+		width: 95vw;
+		height: 2.5rem;
+		font-size: 2rem;
+	}
 
-		.WhoAmI-Content {
-			.WhoAmI-TopContent {
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-				align-items: center;
-				margin-bottom: 1.5rem;
-				img {
-					border-radius: 50%;
-					height: 7rem;
-					width: 7rem;
-				}
-				p {
-					width: 55vw;
-				}
+	.WhoAmI-Content {
+		.WhoAmI-TopContent {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 1.5rem;
+			img {
+				border-radius: 50%;
+				height: 7rem;
+				width: 7rem;
 			}
-			address {
-				width: 80vw;
-				padding: 0.5rem.51rem;
-				background-color: rgba(0, 0, 0, 0.253);
+			p {
+				width: 55vw;
+			}
+		}
+		address {
+			width: 80vw;
+			padding: 0.5rem.51rem;
+			background-color: rgba(0, 0, 0, 0.253);
+			border: 2px solid black;
+			a {
+				text-decoration: none;
+				color: limegreen;
+			}
+		}
+	}
+
+	.Skills {
+		height: auto;
+		background-image: url("../imgs/KeyBoard.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 2rem 0rem;
+		padding: 2rem 0rem;
+		.Skills-Section {
+			margin-bottom: 2ren;
+			h2 {
+				text-align: center;
+				margin-bottom: 0.5rem;
+				margin-top: 2rem;
+				width: 100vw;
+				line-height: 2rem;
+				height: 2.5rem;
+				font-size: 1.5rem;
+				background-color: rgba(0, 0, 0, 0.5);
 				border: 2px solid black;
-				a {
-					text-decoration: none;
-					color: limegreen;
-				}
+				border-left: none;
+				border-right: none;
 			}
-		}
 
-		.Skills {
-			height: auto;
-			background-image: url("../imgs/KeyBoard.png");
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin: 2rem 0rem;
-			padding: 2rem 0rem;
-			.Skills-Section {
-				margin-bottom: 2ren;
-				h2 {
-					text-align: center;
-					margin-bottom: 0.5rem;
-					margin-top: 2rem;
-					width: 100vw;
-					line-height: 2rem;
-					height: 2.5rem;
-					font-size: 1.5rem;
-					background-color: rgba(0, 0, 0, 0.5);
-					border: 2px solid black;
-					border-left: none;
-					border-right: none;
+			ul {
+				&.a {
+					text-align: end;
 				}
-
-				ul {
-					&.a {
-						text-align: end;
-					}
-					&.b {
-						margin: 0rem 1rem;
-					}
-					li {
-						margin: 1rem 0rem;
-					}
-					margin: 0rem 4rem;
-					padding: 1rem 2rem;
-					background-color: rgba(0, 0, 0, 0.5);
-					border: 2px solid black;
+				&.b {
+					margin: 0rem 1rem;
 				}
+				li {
+					margin: 1rem 0rem;
+				}
+				margin: 0rem 4rem;
+				padding: 1rem 2rem;
+				background-color: rgba(0, 0, 0, 0.5);
+				border: 2px solid black;
 			}
 		}
 	}
