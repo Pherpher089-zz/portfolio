@@ -9,11 +9,22 @@
 		display: flex;
 		flex-direction: column;
 		email,
-		phone,
+		phone {
+			margin: 0.5rem 0rem;
+
+			color: white;
+		}
+
 		a {
+			display: flex;
+			flex-direction: row;
 			margin: 0.5rem 0rem;
 			text-decoration: none;
-			color: white;
+			color: limegreen;
+			p {
+				margin-right: 0.3rem;
+				color: white;
+			}
 		}
 	}
 

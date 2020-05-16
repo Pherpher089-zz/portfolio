@@ -7,10 +7,10 @@ function Footer(props) {
 				<email>email: christutor089@gmail.com</email>
 				<phone>phone: (408)375-5016 {"\n"}</phone>
 				<a href="https://github.com/Pherpher089">
-					GitHub: github.com/Pherpher089
+					<p>GitHub: </p> github.com/Pherpher089
 				</a>
 				<a href="https://www.linkedin.com/in/christopher-tutor-68a3b796/">
-					LinkedIn: www.linkedin.com/in/chris-tutor
+					<p>LinkedIn: </p> www.linkedin.com/in/chris-tutor
 				</a>
 			</address>
 			<div className="Footer-Nav">
