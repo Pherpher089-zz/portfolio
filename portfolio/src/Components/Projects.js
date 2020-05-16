@@ -9,10 +9,12 @@ function Projects(props) {
 				<h1>Groovn Music</h1>
 			</div>
 			<img src={MotherBoard} />
-			<a>The App</a>
-			<a href="https://github.com/Pherpher089/groovn-music-fe">
-				The Code
-			</a>
+			<div className="Links">
+				<a>The App</a>
+				<a href="https://github.com/Pherpher089/groovn-music-fe">
+					The Code
+				</a>
+			</div>
 			<div className="Description">
 				<h2>Description</h2>
 				<p>

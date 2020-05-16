@@ -1,6 +1,6 @@
 @mixin border {
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 2px solid black;
+	background-color: rgba(0, 0, 0);
+	//border: 2px solid black;
 }
 @mixin sectionAlignment {
 	align-self: center;
@@ -47,6 +47,23 @@
 		height: 20rem;
 		width: 90vw;
 		object-fit: cover;
+	}
+
+	.Links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		@include border();
+		@include sectionAlignment();
+
+		a {
+			text-align: center;
+			line-height: 1.75rem;
+			width: 5rem;
+			height: 2rem;
+			color: Black;
+			background-color: white;
+		}
 	}
 
 	.Description {
