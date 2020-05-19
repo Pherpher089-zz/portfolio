@@ -3,11 +3,14 @@
 	padding: 1rem, 1rem;
 	background-color: black;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	address {
 		padding: 1rem 1rem;
 		display: flex;
 		flex-direction: column;
+		div {
+			font-weight: bolder;
+		}
 		email,
 		phone {
 			margin: 0.5rem 0rem;
@@ -37,7 +40,7 @@
 			margin: 0.5rem 0rem;
 			text-align: center;
 			line-height: 1.75rem;
-			width: 5rem;
+			width: 4rem;
 			height: 2rem;
 			color: Black;
 			background-color: white;
