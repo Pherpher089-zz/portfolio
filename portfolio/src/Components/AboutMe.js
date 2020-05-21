@@ -17,73 +17,82 @@ function AboutMe(props) {
 				<div className="WhoAmI-Content">
 					<div className="WhoAmI-TopContent">
 						<img src={ProfilePic} />
-						<p>
-							Award-winning web developer and instructor with 10+
-							years’ of well-rounded experience in LAMP
-							development, object-oriented and user-centered
-							design, seeks a position with a top technology firm
-						</p>
 					</div>
-					<address>
-						phone: (408)375-5016
-						<br />
-						<br />
-						email: christutor089@gmail.com <br />
-						<br />
-						resume: ???
-						<br />
-						<br />
-						GitHub:{" "}
-						<a href="https://github.com/Pherpher089">
-							github.com/Pherpher089
-						</a>{" "}
-						<br />
-						<br />
-						LinkedIn:{" "}
-						<a href="https://www.linkedin.com/in/christopher-tutor-68a3b796/">
-							linkedin.com/in/chris-tutor
-						</a>
-					</address>
+					<p>
+						Award-winning web developer and instructor with 10+
+						years’ of well-rounded experience in LAMP development,
+						object-oriented and user-centered design, seeks a
+						position with a top technology firm.
+					</p>
 				</div>
 			</div>
 			<div className="Skills">
-				<h1>What do I know?</h1>
-				<div className="Skills-Section">
+				<h1>What Do I Know?</h1>
+				<div className="Skills-Section a">
 					<h2>Languages</h2>
-					<ul>
+					<p> I speak a variety of useful languages.</p>
+					<ul className="a">
 						<li>HTML/CSS</li>
-						<li>JavaScript/Node.js</li>
-						<li>Python</li>
+						<li>Javascript ES6</li>
+						<li>Python 3</li>
 						<li>C#</li>
 						<li>C++</li>
 					</ul>
 				</div>
-
 				<div className="Skills-Section">
-					<h2>Frameworks/APIs</h2>
+					<h2>Front End</h2>
+					<p>
+						Front end work is what I enjoy the most. My strengths
+						are React/Redux
+					</p>
 					<ul className="a">
+						<li>HTML</li>
+						<li>CSS/Less/Sass</li>
+						<li>Javascript ES6</li>
 						<li>React.js</li>
 						<li>Redux</li>
-						<li>GraphQL</li>
-						<li>Express.js</li>
-						<li>Knex.js</li>
-						<li>Django</li>
-						<li>Axios</li>
-						<li>Flask</li>
+						<li>Responsive Design</li>
+						<li>Client Side Authentication</li>
 					</ul>
 				</div>
 				<div className="Skills-Section">
-					<h2>Other Skills/Knowledge </h2>
-					<ul className="b">
-						<li>Responsive Web Design</li>
-						<li>Precompilers (Less, Sass)</li>
-						<li>Relational Databases</li>
-						<li>Data Structures and Algorithms</li>
-						<li>Blockchain Technology</li>
-						<li>Game development/Programming (Unity3D)</li>
+					<h2>Back End</h2>
+					<p>
+						From crafting data base schemas to implementing
+						authentication and testing, building a solid back end is
+						one of my favorite kinds of puzzles.
+					</p>
+					<ul className="c">
+						<li>Node.js</li>
+						<li>SQL</li>
+						<li>Knex.js</li>
+						<li>Express Router</li>
+						<li>Authentication/JWT/Password.js</li>
 						<li>Back-end Testing (jest)</li>
 						<li>Authentication (Sessions/Cookies/JWT)</li>
+					</ul>
+				</div>
+				<div className="Skills-Section">
+					<h2>Game Development</h2>
+					<p>
+						My origins are here in game programing. My love and
+						passion for developing unique games has pushed my
+						technical ability to where it is today
+					</p>
+					<ul className="c">
+						<li>C#</li>
+						<li>Unity3D</li>
+						<li>Unreal Engine 4</li>
+						<li>3D Modeling/Cinima 4D</li>
+					</ul>
+				</div>
+				<div className="Skills-Section b">
+					<h2>Other Technologies</h2>
+					<p>This is all of the useful stuff I know.</p>
+					<ul className="c">
 						<li>Git</li>
+						<li>Adobe Photoshop</li>
+						<li>NPM/Yarn</li>
 					</ul>
 				</div>
 			</div>

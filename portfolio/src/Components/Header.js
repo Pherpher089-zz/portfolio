@@ -9,17 +9,14 @@ import "./Header.scss";
 function Header(props) {
 	return (
 		<div className="Header-Container">
-			<div className="ProfilePic-Container">
-				<img
-					className="ProfilePic"
-					src={ProfilePic}
-					alt="Christopher Tutor"
-				/>
+			<div className="Statement-Container">
+				<p>
+					Hi there, I'm Chris. I make web applications front to back.
+				</p>
 			</div>
-			<p className="MissionStatement">"Eat, Code, Sleep a little bit"</p>
-			<div className="Buttons">
-				<button>Contact Me</button>
-				<button>Learn More</button>
+			<div className="LearnMore">
+				<div>Learn More</div>
+				<div>V</div>
 			</div>
 		</div>
 	);

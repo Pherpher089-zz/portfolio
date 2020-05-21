@@ -17,8 +17,10 @@ function NavBar(props) {
 		<>
 			<nav className="Container">
 				<div className="NavBar">
-					<h1>Chris Tutor - Web Developer</h1>
-					<button onClick={onClickMenu}>|||</button>
+					<h1>Chris Tutor</h1>
+					<button className="DropDown" onClick={onClickMenu}>
+						|||
+					</button>
 					<div className="NavBarBig">
 						<button className="Link">About Me</button>
 						<button className="Link">Portfolio</button>
