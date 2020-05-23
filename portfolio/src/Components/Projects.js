@@ -122,14 +122,14 @@ function Projects(props) {
 								organize the website on one page. With Redux, I
 								set up all of the routes to communicate with the
 								API and set the state of the application. I also
-								{/* built the backend for this application. With
+								built the backend for this application. With
 								Knex as a DBMS, I created the database in an
 								organized and normalized manor. I utilized
 								express to create the server and set up the API.
 								I created all of the routes using Express as
 								well. I set up authentication for user accounts
 								using JWTs. Finally I styled the front end using
-								Sass.{" "} */}
+								Sass.{" "}
 							</p>
 						</div>
 					</div>

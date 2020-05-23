@@ -1,9 +1,10 @@
+$accent-color: rgb(0, 0, 163);
 .Container {
 	.NavBar {
 		width: 100%;
 		height: 3rem;
 		background-color: white;
-		color: black;
+		color: $accent-color;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -13,6 +14,20 @@
 			margin-left: 0.5rem;
 		}
 		button {
+			padding: 0.5rem 0.5rem;
+			text-align: center;
+			line-height: 1rem;
+			width: 5rem;
+			//height: 2rem;
+			color: $accent-color;
+			background-color: transparent;
+			border: 1px solid $accent-color;
+			border-radius: 3rem;
+			&:hover {
+				background-color: $accent-color;
+				color: white;
+				border: 1px solid $accent-color;
+			}
 			width: 10%;
 			height: 65%;
 			align-self: center;
@@ -30,11 +45,16 @@
 		align-items: center;
 		justify-content: space-around;
 		div {
-			background-color: black;
-			color: white;
+			background-color: white;
+			color: $accent-color;
 			width: 100%;
 			height: 100%;
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid $accent-color;
+			text-align: center;
+			line-height: 3rem;
+			&:first-child {
+				border-top: 1px solid $accent-color;
+			}
 		}
 	}
 	.NavBarBig {
@@ -56,7 +76,7 @@
 	.NavBar {
 		.NavBarBig {
 			display: flex;
-			color: white;
+			color: $accent-color;
 		}
 		.DropDown {
 			display: none;

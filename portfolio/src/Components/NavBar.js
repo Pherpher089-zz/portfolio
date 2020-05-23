@@ -17,7 +17,7 @@ function NavBar(props) {
 		<>
 			<nav className="Container">
 				<div className="NavBar">
-					<h1>Chris Tutor</h1>
+					<h1>Chris Tutor - Full Stack Web Developer</h1>
 					<button className="DropDown" onClick={onClickMenu}>
 						|||
 					</button>
