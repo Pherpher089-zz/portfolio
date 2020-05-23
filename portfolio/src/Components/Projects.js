@@ -13,9 +13,9 @@ function Projects(props) {
 					<div className="Top-Container">
 						<img src={MotherBoard} />
 						<div className="Links">
-							<a>The App</a>
+							<a>App</a>
 							<a href="https://github.com/Pherpher089/groovn-music-fe">
-								The Code
+								Code
 							</a>
 						</div>
 					</div>
@@ -69,11 +69,11 @@ function Projects(props) {
 					<div className="Top-Container">
 						<img src={MotherBoard} />
 						<div className="Links">
-							<a>The App</a>
+							<a>App</a>
 							<a href="https://github.com/Pherpher089/bw-potluck-planner-pt-fe">
-								The Front End
+								Front End
 							</a>
-							<a href="">The Back End</a>
+							<a href="">Back End</a>
 						</div>
 					</div>
 					<div className="Bottom-Container">
@@ -122,14 +122,14 @@ function Projects(props) {
 								organize the website on one page. With Redux, I
 								set up all of the routes to communicate with the
 								API and set the state of the application. I also
-								built the backend for this application. With
+								{/* built the backend for this application. With
 								Knex as a DBMS, I created the database in an
 								organized and normalized manor. I utilized
 								express to create the server and set up the API.
 								I created all of the routes using Express as
 								well. I set up authentication for user accounts
 								using JWTs. Finally I styled the front end using
-								Sass.{" "}
+								Sass.{" "} */}
 							</p>
 						</div>
 					</div>
@@ -190,18 +190,16 @@ function Projects(props) {
 			</div>
 
 			<div className="Project">
-				<div className="Title Stay-At-Home-Moms">
-					Landing Page: Stay at Home Moms
-				</div>
+				<div className="Title Stay-At-Home-Moms">Stay at Home Moms</div>
 				<div className="Container">
 					<div className="Top-Container">
 						<img src={MotherBoard} />
 						<div className="Links">
 							<a href="https://stay-at-home-moms-landing-page.netlify.app/">
-								The Site
+								Website
 							</a>
 							<a href="https://github.com/a-to-z-experiences-team/build-aToz-UI-2">
-								The Code
+								Code
 							</a>
 						</div>
 					</div>
