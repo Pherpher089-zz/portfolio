@@ -2,6 +2,9 @@ import React from "react";
 import MotherBoard from "../imgs/MotherBoard.png";
 import MotherBoard2 from "../imgs/MotherBoard2.png";
 import KeyBoard from "../imgs/KeyBoard.png";
+import PotluckPlannerThumbNail from "../imgs/PotluckPlannerThumbNail.png";
+import StayAtHomeMomsThumbNail from "../imgs/StayAtHomeMomsThumbNail.png";
+import BucketListThumbNail from "../imgs/BucketListThumbNail.png";
 import "./Projects.scss";
 
 function Projects(props) {
@@ -67,13 +70,17 @@ function Projects(props) {
 				<div className="Title Potluck-Planner">Potluck Planner</div>
 				<div className="Container">
 					<div className="Top-Container">
-						<img src={MotherBoard} />
+						<img src={PotluckPlannerThumbNail} />
 						<div className="Links">
-							<a>App</a>
+							<a href="https://potluck-planner-app.netlify.app/">
+								App
+							</a>
 							<a href="https://github.com/Pherpher089/bw-potluck-planner-pt-fe">
 								Front End
 							</a>
-							<a href="">Back End</a>
+							<a href="https://github.com/Pherpher089/Potluck_Planner_Backend">
+								Back End
+							</a>
 						</div>
 					</div>
 					<div className="Bottom-Container">
@@ -140,7 +147,7 @@ function Projects(props) {
 				<div className="Title Bucket-List">Bucket List App</div>
 				<div className="Container">
 					<div className="Top-Container">
-						<img src={MotherBoard} />
+						<img src={BucketListThumbNail} />
 						<div className="Links">
 							<a href="https://github.com/Pherpher089/backend">
 								Back End
@@ -193,7 +200,7 @@ function Projects(props) {
 				<div className="Title Stay-At-Home-Moms">Stay at Home Moms</div>
 				<div className="Container">
 					<div className="Top-Container">
-						<img src={MotherBoard} />
+						<img src={StayAtHomeMomsThumbNail} />
 						<div className="Links">
 							<a href="https://stay-at-home-moms-landing-page.netlify.app/">
 								Website
