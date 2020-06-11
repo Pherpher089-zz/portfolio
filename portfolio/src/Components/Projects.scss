@@ -12,158 +12,21 @@ $accent-color: rgb(0, 0, 163);
 		text-align: center;
 	}
 }
-.Projects {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	.Project {
-		//width: 95%;
-		background-color: $accent-color;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border-radius: 0.3rem;
-		margin: 0.5rem 0rem;
-		border: 1px solid grey;
-		.Title {
-			//@extend: 100%;
-			//width: 95%;
-			border: 2px solid $accent-color;
-			background-color: white;
-			border-radius: 0.3rem;
-			font-weight: bolder;
-			font-size: 1.5rem;
-			color: $accent-color;
-			padding: 0.25rem 1rem;
-			margin: 1rem;
-			align-self: center;
-			line-height: 2.5rem;
 
-			h1 {
-				text-align: center;
-				margin-bottom: 2rem;
-			}
-		}
-		.Top-Container {
-			display: flex;
-			flex-direction: column;
-
-			a {
-				//margin: 0rem 2rem;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-				color: white;
-				text-decoration: none;
-				&:hover {
-					color: limegreen;
-				}
-			}
-
-			img {
-				border-radius: 0.3rem;
-				align-self: center;
-				height: 20rem;
-				width: 100%;
-				object-fit: cover;
-			}
-		}
-
-		.Links {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			width: 95%;
-			@include border();
-			@include sectionAlignment();
-
-			a {
-				padding: 0.5rem 0.5rem;
-				text-align: center;
-				line-height: 1rem;
-				width: 5rem;
-				//height: 2rem;
-				color: white;
-				background-color: transparent;
-				border: 1px solid white;
-				border-radius: 3rem;
-				&:hover {
-					background-color: white;
-					color: $accent-color;
-					border: 1px solid $accent-color;
-				}
-			}
-		}
-
-		.Description {
-			@include sectionAlignment();
-			@include border();
-			p {
-				text-indent: 1rem;
-			}
-		}
-
-		.Tech {
-			@include sectionAlignment();
-			@include border();
-			width: 80%;
-			.Tech-Container {
-				display: flex;
-				justify-content: space-between;
-			}
-			ul {
-				margin-left: 1rem;
-				list-style-type: disc;
-			}
-			h3 {
-				text-align: center;
-				margin: 1rem 0.5rem;
-			}
-		}
-
-		.Responsibilities {
-			@include sectionAlignment();
-			@include border();
-			p {
-				text-indent: 1rem;
-			}
-		}
-
-		.Section {
-			padding: 0.5rem 1.5rem;
-			color: white;
-			// color: black;
-			// background-color: white;
-			border-radius: 0.3rem;
-		}
+.ProjectContainer {
+	background-color: $accent-color;
+	h1 {
+		width: 100%;
+		font-size: 2rem;
+		color: white;
 	}
-}
-@media only screen and (min-width: 800px) {
 	.Projects {
-		.Project {
-			.Container {
-				display: flex;
-				flex-direction: row-reverse;
-				justify-content: space-around;
-				align-items: center;
-				.Top-Container {
-					width: 45%;
-				}
-				// .Top-Container {
-				// 	img {
-				// 		margin-top: 3rem;
-				// 	}
-				// }
-				.Bottom-Container {
-					width: 45%;
-					align-items: start;
-					display: flex;
-					flex-direction: column;
-					.Tech-Container {
-						flex-direction: row;
-					}
-				}
-			}
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.ProjectImg {
+			margin: 1rem;
+			width: 35rem;
 		}
 	}
 }

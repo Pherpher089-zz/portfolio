@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.scss";
 function NavBar(props) {
 	const [navState, setNavState] = useState("Close");
@@ -18,29 +19,25 @@ function NavBar(props) {
 			<nav className="Container">
 				<div className="NavBar">
 					<h1>Chris Tutor - Full Stack Web Developer</h1>
-					<button className="DropDown" onClick={onClickMenu}>
+					<button className="DropDown Button" onClick={onClickMenu}>
 						|||
 					</button>
 					<div className="NavBarBig">
-						<button className="Link">About Me</button>
-						<button className="Link">Portfolio</button>
-						<button className="Link">Contact Me</button>
+						<Link className="Button" to="/">
+							Home
+						</Link>
+						<Link className="Button">About Me</Link>
+						<Link className="Button">Portfolio</Link>
+						<Link className="Button">Contact Me</Link>
 					</div>
 				</div>
 				<div className={navState + " DropDown"}>
-					<div
-						onClick={() => props.scrollTo("AboutMe")}
-						className="Link"
-					>
-						About Me
-					</div>
-					<div
-						onClick={() => props.scrollTo("Projects")}
-						className="Link"
-					>
-						Projects
-					</div>
-					<div className="Link">Contact Me</div>
+					<Link className="Button" to="/">
+						Home
+					</Link>
+					<Link className="Button">About Me</Link>
+					<Link className="Button">Projects</Link>
+					<Link className="Button">Contact Me</Link>
 				</div>
 			</nav>
 		</>

@@ -19,8 +19,8 @@ function Footer(props) {
 			</address>
 			<div className="Footer-Nav">
 				<a>Contact Me</a>
-				<a onClick={() => props.scrollTo("AboutMe")}>About Me</a>
-				<a onClick={() => props.scrollTo("Projects")}>Projects</a>
+				<a>About Me</a>
+				<a>Projects</a>
 				<a>Resumes</a>
 			</div>
 		</div>

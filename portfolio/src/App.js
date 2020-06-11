@@ -1,31 +1,32 @@
 //Packages
 import React from "react";
-import {
-	Link,
-	DirectLink,
-	Element,
-	Events,
-	animateScroll as scroll,
-	scrollSpy,
-	scroller,
-} from "react-scroll";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //Components
+import history from "./history";
 import NavBar from "./Components/NavBar.js";
-
 import Footer from "./Components/Footer.js";
 import HomePage from "./Components/HomePage.js";
+import ProjectView from "./Components/ProjectView.js";
 //Style
 import "./App.scss";
 
-const App = () => {
+// Context
+import { DataContextProvider } from "./data/DataContext.js";
+
+function App() {
 	return (
-		<div className="App">
-			<NavBar />
-			<HomePage />
-			<Footer />
-		</div>
+		<Router history={history}>
+			<DataContextProvider>
+				<div className="App">
+					<NavBar />
+					<Route exact path="/" component={HomePage} />
+					<Route path="/project" component={ProjectView} />
+					<Footer />
+				</div>
+			</DataContextProvider>
+		</Router>
 	);
-};
+}
 
 export default App;

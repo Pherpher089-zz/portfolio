@@ -1,36 +1,12 @@
-import PotluckPlannerThumbNail from "../src/imgs/PotluckPlannerThumbNail.png";
-import StayAtHomeMomsThumbNail from "../src/imgs/StayAtHomeMomsThumbNail.png";
-import BucketListThumbNail from "../src/imgs/BucketListThumbNail.png";
-import MotherBoard from "../src/imgs/MotherBoard.png";
+import PotluckPlannerThumbNail from "../imgs/PotluckPlannerThumbNail.png";
+import StayAtHomeMomsThumbNail from "../imgs/StayAtHomeMomsThumbNail.png";
+import BucketListThumbNail from "../imgs/BucketListThumbNail.png";
+import MotherBoard from "../imgs/MotherBoard.png";
 
-export const data = {
+const projectData = {
 	projects: [
 		{
 			id: 0,
-			name: "Groovn Music",
-			img: MotherBoard,
-			description:
-				"A music recommendation app. Groovn music generates a recommended playlist for users based on their liked songs on their Spotify account",
-			techUsed: [
-				[
-					"React.js",
-					"React Hooks",
-					"React Context API",
-					"Apollo/GraphQL",
-				],
-				[
-					"Node.js",
-					"GraphQL",
-					"Mongo Data Base",
-					"Passport.js(Spotify strategy)",
-				],
-			],
-			responsibilities:
-				"My contribution to this project besides project planning, was the front end.I set up the React app with routes and the context.",
-			links: ["", "https://github.com/Pherpher089/groovn-music-fe", ""],
-		},
-		{
-			id: 1,
 			name: "Potluck Planner",
 			img: PotluckPlannerThumbNail,
 			description:
@@ -53,6 +29,30 @@ export const data = {
 				"https://github.com/Pherpher089/bw-potluck-planner-pt-fe",
 				"https://github.com/Pherpher089/Potluck_Planner_Backend",
 			],
+		},
+		{
+			id: 1,
+			name: "Groovn Music",
+			img: MotherBoard,
+			description:
+				"A music recommendation app. Groovn music generates a recommended playlist for users based on their liked songs on their Spotify account",
+			techUsed: [
+				[
+					"React.js",
+					"React Hooks",
+					"React Context API",
+					"Apollo/GraphQL",
+				],
+				[
+					"Node.js",
+					"GraphQL",
+					"Mongo Data Base",
+					"Passport.js(Spotify strategy)",
+				],
+			],
+			responsibilities:
+				"My contribution to this project besides project planning, was the front end.I set up the React app with routes and the context.",
+			links: ["", "https://github.com/Pherpher089/groovn-music-fe", ""],
 		},
 		{
 			id: 2,
@@ -100,3 +100,4 @@ export const data = {
 		},
 	],
 };
+export default projectData;
