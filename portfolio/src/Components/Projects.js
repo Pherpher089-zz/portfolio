@@ -17,16 +17,26 @@ function Projects(props) {
 
 	return (
 		<div className="ProjectContainer">
-			<h1>Projects</h1>
+			<h1 className="SectionTitle">Projects</h1>
 			<div className="Projects">
 				{projects.map((project) => (
-					<Link to="./project" onClick={onClick}>
-						<img
-							id={project.id}
-							src={project.img}
-							className="ProjectImg"
-						/>
-					</Link>
+					<div className="Project">
+						<h1>{project.name}</h1>
+						<Link to="./project" onClick={onClick}>
+							<div className="Container">
+								<img
+									id={project.id}
+									src={project.img}
+									className="ProjectImg"
+								/>
+								<div className="OverLay" id={project.id}>
+									<p className="Text">
+										{project.description}
+									</p>
+								</div>
+							</div>
+						</Link>
+					</div>
 				))}
 			</div>
 		</div>
