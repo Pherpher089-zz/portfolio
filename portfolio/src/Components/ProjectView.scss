@@ -1,0 +1,41 @@
+$accent-color: rgb(0, 0, 163);
+
+.Container {
+	background-color: $accent-color;
+	color: white;
+	.Title {
+		padding: 2rem;
+		width: 100%;
+		font-size: 2rem;
+		font-weight: bolder;
+		color: white;
+		text-align: center;
+	}
+	.Group {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		.Desc {
+			width: 90vw;
+			margin: 3rem;
+			text-align: center;
+		}
+		.SubGroup {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			.SubGroup1 {
+				.Img {
+					width: 55vw;
+				}
+			}
+			.SubGroup2 {
+				background-color: white;
+				color: $accent-color;
+				width: 30vw;
+			}
+		}
+	}
+}
