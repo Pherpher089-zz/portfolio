@@ -48,7 +48,9 @@ const ProjectView = () => {
 				<div className="SubGroup">
 					<div className="SubGroup1">
 						<img className="Img" src={project.img}></img>
-						<div className="Links">{PrintLinks()}</div>
+						<div className="LinkContainer">
+							<div className="Links">{PrintLinks()}</div>
+						</div>
 					</div>
 					<div className="SubGroup2">
 						<div>
