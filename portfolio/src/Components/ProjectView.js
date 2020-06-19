@@ -4,16 +4,38 @@ import "./ProjectView.scss";
 const ProjectView = () => {
 	const [state, setState] = React.useContext(DataContext);
 	const project = state.projectData.projects[state.currentProject];
+	const PrintLinks = () => {
+		const label = ["The Site", "The Front End", "The Back End"];
+		let c = -1;
+		const finalResult = [];
+		let result = project.links.map((link) => {
+			c++;
+			return (
+				<button
+					onClick={() => {
+						window.open(link);
+					}}
+				>{`${label[c]}`}</button>
+			);
+		});
 
+		return result;
+	};
 	const PrintTechUsed = () => {
 		const label = ["Front End", "Back End"];
 		let finalResult = [];
 		for (var i = 0; i < project.techUsed.length; i++) {
-			finalResult.push(<h3>{label[i]}</h3>);
-			var result = project.techUsed[i].map((tech) => {
-				return <li>{tech}</li>;
-			});
-			finalResult.push(result);
+			let _result = (
+				<div className="TechList">
+					<h3>{label[i]}</h3>
+					<ul>
+						{project.techUsed[i].map((tech) => {
+							return <li>{tech}</li>;
+						})}
+					</ul>
+				</div>
+			);
+			finalResult.push(_result);
 		}
 
 		return finalResult;
@@ -26,19 +48,19 @@ const ProjectView = () => {
 				<div className="SubGroup">
 					<div className="SubGroup1">
 						<img className="Img" src={project.img}></img>
+						<div className="Links">{PrintLinks()}</div>
 					</div>
 					<div className="SubGroup2">
 						<div>
 							<h2>TechUsed</h2>
-							<div>{PrintTechUsed()}</div>
+							<div className="Tech">{PrintTechUsed()}</div>
 						</div>
-						<div>
+						<div className="Resp">
 							<h2>My Responsibilities</h2>
 							<div>{project.responsibilities}</div>
 						</div>
 					</div>
 				</div>
-				<div>links</div>
 			</div>
 		</div>
 	);
