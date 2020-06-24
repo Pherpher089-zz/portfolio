@@ -20,10 +20,12 @@ function App() {
 		<Router history={history}>
 			<DataContextProvider>
 				<div className="App">
-					<NavBar />
-					<Route exact path="/" component={HomePage} />
-					<Route path="/project" component={ProjectView} />
-					<Footer />
+					<ScrollToTheTop>
+						<NavBar />
+						<Route exact path="/" component={HomePage} />
+						<Route path="/project" component={ProjectView} />
+						<Footer />
+					</ScrollToTheTop>
 				</div>
 			</DataContextProvider>
 		</Router>
