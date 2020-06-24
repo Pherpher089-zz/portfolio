@@ -8,6 +8,7 @@ import NavBar from "./Components/NavBar.js";
 import Footer from "./Components/Footer.js";
 import HomePage from "./Components/HomePage.js";
 import ProjectView from "./Components/ProjectView.js";
+import ScrollToTheTop from "./Components/ScrollToTheTop.js";
 //Style
 import "./App.scss";
 

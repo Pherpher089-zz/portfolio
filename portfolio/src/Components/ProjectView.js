@@ -1,6 +1,7 @@
 import React from "react";
 import { DataContext } from "../data/DataContext.js";
 import "./ProjectView.scss";
+
 const ProjectView = () => {
 	const [state, setState] = React.useContext(DataContext);
 	const project = state.projectData.projects[state.currentProject];
@@ -10,13 +11,15 @@ const ProjectView = () => {
 		const finalResult = [];
 		let result = project.links.map((link) => {
 			c++;
-			return (
-				<button
-					onClick={() => {
-						window.open(link);
-					}}
-				>{`${label[c]}`}</button>
-			);
+			if (project.links[c] !== "") {
+				return (
+					<button
+						onClick={() => {
+							window.open(link);
+						}}
+					>{`${label[c]}`}</button>
+				);
+			}
 		});
 
 		return result;
@@ -25,17 +28,19 @@ const ProjectView = () => {
 		const label = ["Front End", "Back End"];
 		let finalResult = [];
 		for (var i = 0; i < project.techUsed.length; i++) {
-			let _result = (
-				<div className="TechList">
-					<h3>{label[i]}</h3>
-					<ul>
-						{project.techUsed[i].map((tech) => {
-							return <li>{tech}</li>;
-						})}
-					</ul>
-				</div>
-			);
-			finalResult.push(_result);
+			if (project.techUsed[i].length > 0) {
+				let _result = (
+					<div className="TechList">
+						<h3>{label[i]}</h3>
+						<ul>
+							{project.techUsed[i].map((tech) => {
+								return <li>{tech}</li>;
+							})}
+						</ul>
+					</div>
+				);
+				finalResult.push(_result);
+			}
 		}
 
 		return finalResult;

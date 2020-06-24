@@ -18,11 +18,12 @@ function AboutMe(props) {
 					<div className="WhoAmI-TopContent">
 						<img src={ProfilePic} />
 					</div>
-					<p>
-						Award-winning web developer and instructor with 10+
-						years’ of well-rounded experience in LAMP development,
-						object-oriented and user-centered design, seeks a
-						position with a top technology firm.
+					<p className="AboutMe-Text">
+						I am a full stack developer with an origin in game
+						Development. I specialize in making engaging and
+						responsive single page web applications. My goal is to
+						work with teams that will allow me to master my skills
+						while contributing to something greater than my self.{" "}
 					</p>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 function Footer(props) {
 	return (
@@ -18,10 +19,9 @@ function Footer(props) {
 				</a>
 			</address>
 			<div className="Footer-Nav">
-				<a>Contact Me</a>
-				<a>About Me</a>
-				<a>Projects</a>
-				<a>Resumes</a>
+				<Link to="/">Home</Link>
+				{/* <Link>About Me</Link>
+				<Link>Projects</Link> */}
 			</div>
 		</div>
 	);
