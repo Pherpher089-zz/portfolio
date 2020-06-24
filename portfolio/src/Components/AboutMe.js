@@ -3,9 +3,6 @@ import React from "react";
 
 //Images
 import ProfilePic from "../imgs/ProfilePic.png";
-import MotherBoard from "../imgs/MotherBoard.png";
-import KeyBoard from "../imgs/KeyBoard.png";
-import MotherBoard2 from "../imgs/MotherBoard2.png";
 
 //Styling
 import "./AboutMe.scss";
@@ -78,7 +75,7 @@ function AboutMe(props) {
 					<p>
 						My origins are here in game programing. My love and
 						passion for developing unique games has pushed my
-						technical ability to where it is today
+						technical ability to where it is today.
 					</p>
 					<ul className="c">
 						<li>C#</li>
