@@ -1,6 +1,5 @@
 import React from "react";
 import { DataContext } from "../data/DataContext";
-import history from "../history";
 import { Link } from "react-router-dom";
 import "./Projects.scss";
 

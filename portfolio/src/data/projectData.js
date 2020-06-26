@@ -1,7 +1,7 @@
 import PotluckPlannerThumbNail from "../imgs/PotluckPlannerThumbNail.png";
 import StayAtHomeMomsThumbNail from "../imgs/StayAtHomeMomsThumbNail.png";
 import BucketListThumbNail from "../imgs/BucketListThumbNail.png";
-import MotherBoard from "../imgs/MotherBoard.png";
+//import MotherBoard from "../imgs/MotherBoard.png";
 
 const projectData = {
 	projects: [

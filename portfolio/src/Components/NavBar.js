@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import CT_Logo from "../imgs/CT_Logo.png";
 import "./NavBar.scss";
+
 function NavBar(props) {
 	const [navState, setNavState] = useState("Close");
 	const onClickMenu = (e) => {
@@ -18,7 +20,10 @@ function NavBar(props) {
 		<>
 			<nav className="Container">
 				<div className="NavBar">
-					<h1>Chris Tutor - Full Stack Web Developer</h1>
+					<div className="Logo-Title">
+						<img src={CT_Logo} className="Logo" />
+						<h1>Chris Tutor - Full Stack Web Developer</h1>
+					</div>
 					<button className="DropDown Button" onClick={onClickMenu}>
 						|||
 					</button>
