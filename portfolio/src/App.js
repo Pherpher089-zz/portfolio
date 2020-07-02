@@ -8,6 +8,7 @@ import NavBar from "./Components/NavBar.js";
 import Footer from "./Components/Footer.js";
 import HomePage from "./Components/HomePage.js";
 import ProjectView from "./Components/ProjectView.js";
+import AboutMeView from "./Components/AboutMeView.js";
 import ScrollToTheTop from "./Components/ScrollToTheTop.js";
 //Style
 import "./App.scss";
@@ -24,6 +25,7 @@ function App() {
 						<NavBar />
 						<Route exact path="/" component={HomePage} />
 						<Route path="/project" component={ProjectView} />
+						<Route path="/about" component={AboutMeView} />
 						<Footer />
 					</ScrollToTheTop>
 				</div>

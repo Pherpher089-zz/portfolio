@@ -20,8 +20,11 @@ function Footer(props) {
 			</address>
 			<div className="Footer-Nav">
 				<Link to="/">Home</Link>
-				{/* <Link>About Me</Link>
-				<Link>Projects</Link> */}
+				<Link className="Button" to="/about">
+					About Me
+				</Link>
+
+				{/*<Link>Projects</Link> */}
 			</div>
 		</div>
 	);
