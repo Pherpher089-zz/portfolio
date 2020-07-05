@@ -7,8 +7,6 @@ function Footer(props) {
 			<address>
 				<div>email</div>
 				<email>christutor089@gmail.com</email>
-				<div>Phone</div>
-				<phone>(408)375-5016 {"\n"}</phone>
 				<div>GitHub</div>
 				<a href="https://github.com/Pherpher089">
 					github.com/Pherpher089
@@ -23,8 +21,12 @@ function Footer(props) {
 				<Link className="Button" to="/about">
 					About Me
 				</Link>
-
-				{/*<Link>Projects</Link> */}
+				<Link className="Button" to="/projects">
+					Projects
+				</Link>
+				<Link className="Button" to="/contact">
+					Contact
+				</Link>
 			</div>
 		</div>
 	);
