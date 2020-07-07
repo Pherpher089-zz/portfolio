@@ -1,9 +1,6 @@
 //Packages
 import React from "react";
 
-//Images
-import ProfilePic from "../imgs/ProfilePic.png";
-
 //Styling
 import "./AboutMe.scss";
 function AboutMe(props) {
@@ -12,9 +9,7 @@ function AboutMe(props) {
 			<div className="AboutMe">
 				<h1>Who am I?</h1>
 				<div className="WhoAmI-Content">
-					<div className="WhoAmI-TopContent">
-						<img src={ProfilePic} />
-					</div>
+					<div className="WhoAmI-TopContent"></div>
 					<p className="AboutMe-Text">
 						I am a full stack developer with an origin in game
 						Development. I specialize in making engaging and
