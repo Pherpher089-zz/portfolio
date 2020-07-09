@@ -31,16 +31,30 @@ function NavBar(props) {
 						<Link className="Button" to="/">
 							Home
 						</Link>
-						{/* <Link className="Button">About Me</Link>
-						<Link className="Button">Portfolio</Link> */}
+						<Link className="Button" to="/about">
+							About Me
+						</Link>
+						<Link className="Button" to="/projects">
+							Projects
+						</Link>
+						{/* <Link className="Button" to="/contact">
+							Contact
+						</Link> */}
 					</div>
 				</div>
 				<div className={navState + " DropDown"}>
 					<Link className="Button" to="/">
 						Home
 					</Link>
-					{/* <Link className="Button">About Me</Link>
-					<Link className="Button">Projects</Link> */}
+					<Link className="Button" to="/about">
+						About Me
+					</Link>
+					<Link className="Button" to="/projects">
+						Projects
+					</Link>
+					{/* <Link className="Button" to="/contact">
+						Contact Me
+					</Link> */}
 				</div>
 			</nav>
 		</>
