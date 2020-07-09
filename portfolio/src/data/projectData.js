@@ -1,6 +1,6 @@
-import PotluckPlannerThumbNail from "../imgs/PotluckPlannerThumbNail.png";
-import StayAtHomeMomsThumbNail from "../imgs/StayAtHomeMomsThumbNail.png";
-import BucketListThumbNail from "../imgs/BucketListThumbNail.png";
+import PotluckPlannerThumbNail from "../imgs/PotluckPlannerThumbNail.jpg";
+import StayAtHomeMomsThumbNail from "../imgs/StayAtHomeMomsThumbNail.jpg";
+import BucketListThumbNail from "../imgs/BucketListThumbNail.jpg";
 //import MotherBoard from "../imgs/MotherBoard.png";
 
 const projectData = {
