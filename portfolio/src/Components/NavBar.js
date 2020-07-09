@@ -37,9 +37,9 @@ function NavBar(props) {
 						<Link className="Button" to="/projects">
 							Projects
 						</Link>
-						<Link className="Button" to="/contact">
-							Contact Me
-						</Link>
+						{/* <Link className="Button" to="/contact">
+							Contact
+						</Link> */}
 					</div>
 				</div>
 				<div className={navState + " DropDown"}>
@@ -52,9 +52,9 @@ function NavBar(props) {
 					<Link className="Button" to="/projects">
 						Projects
 					</Link>
-					<Link className="Button" to="/contact">
+					{/* <Link className="Button" to="/contact">
 						Contact Me
-					</Link>
+					</Link> */}
 				</div>
 			</nav>
 		</>
