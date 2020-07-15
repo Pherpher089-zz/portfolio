@@ -9,7 +9,6 @@ function AboutMe(props) {
 			<div className="AboutMe">
 				<h1>Who am I?</h1>
 				<div className="WhoAmI-Content">
-					<div className="WhoAmI-TopContent"></div>
 					<p className="AboutMe-Text">
 						I am a full stack developer with an origin in game
 						Development. I specialize in making engaging and
@@ -17,6 +16,12 @@ function AboutMe(props) {
 						work with teams that will allow me to master my skills
 						while contributing to something greater than my self.{" "}
 					</p>
+					<a
+						href="https://drive.google.com/file/d/18rIID6hMShEcII9dWTVgTJzDJigZ07pR/view"
+						target="_blank"
+					>
+						My Resume
+					</a>
 				</div>
 			</div>
 			<div className="Skills">

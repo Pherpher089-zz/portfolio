@@ -6,7 +6,7 @@ const ProjectView = () => {
 	const [state, setState] = React.useContext(DataContext);
 	const project = state.projectData.projects[state.currentProject];
 	const PrintLinks = () => {
-		const label = ["The Site", "The Front End", "The Back End"];
+		const label = ["Site", "Front End", "Back End"];
 		let c = -1;
 		const finalResult = [];
 		let result = project.links.map((link) => {
@@ -46,7 +46,7 @@ const ProjectView = () => {
 		return finalResult;
 	};
 	return (
-		<div className="Container">
+		<div className="ProjectViewContainer">
 			<h1 className="Title">{project.name}</h1>
 			<div className="Group">
 				<div className="Desc">{project.description}</div>
@@ -58,7 +58,7 @@ const ProjectView = () => {
 						</div>
 					</div>
 					<div className="SubGroup2">
-						<div>
+						<div className="TechContainer">
 							<h2>TechUsed</h2>
 							<div className="Tech">{PrintTechUsed()}</div>
 						</div>

@@ -1,6 +1,8 @@
-$accent-color: #001349;
+$accent-color: #3b4561;
 .AboutMe-Container {
-	margin-top: 2rem;
+	background-color: $accent-color;
+	color: white;
+	padding-top: 2rem;
 	h1 {
 		text-align: center;
 		margin-bottom: 1rem;
@@ -10,32 +12,28 @@ $accent-color: #001349;
 	}
 
 	.WhoAmI-Content {
-		.WhoAmI-TopContent {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
-			margin-bottom: 1.5rem;
-			img {
-				border-radius: 50%;
-				height: 15rem;
-				width: 15rem;
-			}
-		}
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 1.5rem;
+
 		.AboutMe-Text {
 			text-indent: 2rem;
 			line-height: 1.2;
 			font-size: 1.3rem;
 			padding: 0rem 2rem;
 		}
-		address {
-			width: 18rem;
-			padding: 0.5rem.51rem;
-			background-color: black;
-			border: 2px solid white;
-			a {
-				text-decoration: none;
-				color: limegreen;
+		a {
+			text-decoration: none;
+			margin: 1.5rem;
+			border: 1px solid white;
+			border-radius: 0.3rem;
+			color: white;
+			padding: 0.5rem 1rem;
+			&:hover {
+				background-color: white;
+				color: $accent-color;
 			}
 		}
 	}
@@ -45,16 +43,16 @@ $accent-color: #001349;
 	}
 
 	.Skills {
-		background-color: $accent-color;
+		color: $accent-color;
+		background-color: white;
 		width: 100%;
 		height: auto;
-		margin: 2rem 0rem;
 		padding: 2rem 0rem;
 		//border: 1px solid grey;
 		display: flex;
 		flex-direction: column;
 		h1 {
-			color: white;
+			color: $accent-color;
 		}
 		.a {
 			border-top-right-radius: 0.3rem;
@@ -65,13 +63,14 @@ $accent-color: #001349;
 			border-bottom-left-radius: 0.3rem;
 		}
 		.Skills-Section {
-			background-color: white;
+			color: white;
+			background-color: $accent-color;
 			margin: 0rem 1rem;
 			margin-bottom: 2ren;
 			// width: 20rem;
 			height: 20rem auto;
 			h2 {
-				color: $accent-color;
+				color: white;
 				font-weight: bold;
 				text-align: center;
 				margin: 1rem 0rem;
@@ -110,14 +109,6 @@ $accent-color: #001349;
 	.AboutMe-Container {
 		.AboutMe {
 			.WhoAmI-Content {
-				display: flex;
-				flex-direction: row-reverse;
-				p {
-					padding: 1rem;
-				}
-				.WhoAmI-TopContent {
-					display: flex;
-				}
 				.Contact {
 					address {
 						div {
@@ -137,8 +128,9 @@ $accent-color: #001349;
 			justify-content: space-around;
 			//align-items: center;
 			.Skills-Section {
+				color: white;
 				margin: 1rem 0rem;
-				background-color: white;
+				background-color: $accent-color;
 				border-radius: 0.3rem;
 				//box-shadow: 4px 4px rgb(189, 189, 189);
 
