@@ -2,7 +2,7 @@ $accent-color: #001349;
 .Container {
 	.NavBar {
 		width: 100%;
-		height: 3rem;
+		height: 4rem;
 		background-color: white;
 		color: $accent-color;
 		display: flex;
@@ -12,8 +12,10 @@ $accent-color: #001349;
 			display: flex;
 			flex-direction: row;
 			.Logo {
-				height: 100%;
-				width: auto;
+				align-self: center;
+				padding: 1rem;
+				width: 2rem;
+				height: 2rem;
 			}
 			h1 {
 				align-self: center;
@@ -35,8 +37,6 @@ $accent-color: #001349;
 				color: white;
 				border: 1px solid $accent-color;
 			}
-			width: 10%;
-			height: 65%;
 			align-self: center;
 			margin-right: 1rem;
 		}
