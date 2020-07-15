@@ -1,5 +1,5 @@
 $accent-color: #001349;
-.Container {
+.NavContainer {
 	.NavBar {
 		width: 100%;
 		height: 4rem;
@@ -84,8 +84,18 @@ $accent-color: #001349;
 	}
 }
 @media only screen and (max-width: 800px) {
-	.NavBarBig {
-		display: none;
+	.NavContainer {
+		.NavBar {
+			height: 5rem;
+			.Logo-Title {
+				h1 {
+					font-size: 1.2rem;
+				}
+			}
+		}
+		.NavBarBig {
+			display: none;
+		}
 	}
 }
 

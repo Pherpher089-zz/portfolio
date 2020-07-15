@@ -19,7 +19,7 @@ function NavBar(props) {
 
 	return (
 		<>
-			<nav className="Container">
+			<nav className="NavContainer">
 				<div className="NavBar">
 					<div className="Logo-Title">
 						<img src={CT_Logo} className="Logo" />
