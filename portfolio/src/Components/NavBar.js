@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CT_Logo from "../imgs/CT_Logo.jpg";
 import "./NavBar.scss";
 
 function NavBar(props) {
