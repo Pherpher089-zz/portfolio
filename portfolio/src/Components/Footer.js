@@ -13,10 +13,13 @@ function Footer(props) {
 					<email>christutor089@gmail.com</email>
 				</div>
 				<div className="Icons">
-					<a href="https://www.linkedin.com/in/christopher-tutor/">
+					<a
+						href="https://www.linkedin.com/in/christopher-tutor/"
+						target="_blank"
+					>
 						<img className="Icon" src={GitHubIcon} />
 					</a>
-					<a href="https://github.com/Pherpher089">
+					<a href="https://github.com/Pherpher089" target="_blank">
 						<img className="Icon" src={LinkedInIcon} />
 					</a>
 				</div>
