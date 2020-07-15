@@ -1,9 +1,6 @@
 //Packages
 import React from "react";
 
-//Images
-import ProfilePic from "../imgs/ProfilePic.png";
-
 //Styling
 import "./AboutMe.scss";
 function AboutMe(props) {
