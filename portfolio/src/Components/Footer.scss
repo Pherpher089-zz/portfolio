@@ -42,8 +42,7 @@ $accent-color: #001349;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
-		margin-bottom: 1rem;
-		margin-right: 1rem;
+
 		.Button {
 			text-align: center;
 			text-decoration: none;
@@ -63,6 +62,26 @@ $accent-color: #001349;
 				color: white;
 				background-color: $accent-color;
 				border: 1px solid $accent-color;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.Footer {
+		padding-top: 0.5rem;
+		height: 35vh;
+		.Info {
+			flex-direction: column-reverse;
+			align-items: center;
+			justify-content: space-between;
+			padding-bottom: 2rem;
+			.Icons {
+				width: 20vw;
+				padding-bottom: 1rem;
+			}
+			.Footer-Nav {
+				padding-bottom: 1rem;
 			}
 		}
 	}
