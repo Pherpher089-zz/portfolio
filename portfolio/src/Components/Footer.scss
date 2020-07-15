@@ -16,7 +16,6 @@ $accent-color: #001349;
 		justify-content: space-between;
 		.Email {
 			align-self: center;
-
 			email {
 				font-weight: normal;
 			}
@@ -28,21 +27,13 @@ $accent-color: #001349;
 			.Icon {
 				width: 3rem;
 				height: 3rem;
+				&:hover {
+					filter: contrast(10%);
+				}
 			}
 		}
 		div {
 			font-weight: bolder;
-		}
-		a {
-			display: flex;
-			flex-direction: row;
-			margin: 0.5rem 0rem;
-			text-decoration: none;
-			color: limegreen;
-			p {
-				margin-right: 0.3rem;
-				color: white;
-			}
 		}
 	}
 	.Footer-Nav {
@@ -51,25 +42,46 @@ $accent-color: #001349;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
-		margin-bottom: 1rem;
-		margin-right: 1rem;
-		a {
-			text-decoration: none;
-			padding: 0.5rem 0.5rem;
+
+		.Button {
 			text-align: center;
+			text-decoration: none;
+			padding: 0.3rem 0.3rem;
 			line-height: 1rem;
-			width: 5rem auto;
-			//height: 2rem;
+			width: 4.5rem;
+			height: 1rem;
+			font-weight: bold;
+			font-size: 0.75rem;
+			align-self: center;
 			color: $accent-color;
 			background-color: transparent;
 			border: 1px solid $accent-color;
-			border-radius: 3rem;
+			border-radius: 0.5rem;
 			&:hover {
 				cursor: pointer;
 				color: white;
 				background-color: $accent-color;
-
 				border: 1px solid $accent-color;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.Footer {
+		padding-top: 0.5rem;
+		height: 35vh;
+		.Info {
+			flex-direction: column-reverse;
+			align-items: center;
+			justify-content: space-between;
+			padding-bottom: 2rem;
+			.Icons {
+				width: 25vw;
+				padding-bottom: 1rem;
+			}
+			.Footer-Nav {
+				padding-bottom: 1rem;
 			}
 		}
 	}

@@ -1,6 +1,7 @@
-$accent-color: #001349;
+$accent-color: #3b4561;
+$darker-accent-color: #2b3247;
 
-.Container {
+.ProjectViewContainer {
 	background-color: $accent-color;
 	color: white;
 	height: auto;
@@ -19,7 +20,7 @@ $accent-color: #001349;
 		justify-content: space-around;
 		.Desc {
 			width: 90vw;
-			margin: 3rem;
+			margin: 3rem 1rem;
 			text-align: center;
 		}
 		.SubGroup {
@@ -43,7 +44,7 @@ $accent-color: #001349;
 						flex-direction: row;
 						justify-content: space-around;
 						button {
-							padding: 0.3rem 0.5rem;
+							padding: 0.5rem 0.5rem;
 							text-decoration: none;
 							color: white;
 							background-color: transparent;
@@ -58,10 +59,11 @@ $accent-color: #001349;
 				}
 			}
 			.SubGroup2 {
-				background-color: white;
-				color: $accent-color;
-				width: 30vw;
+				color: white;
+				background-color: $accent-color;
+				width: 35vw;
 				margin-bottom: 1.5rem;
+				font-size: 1rem;
 				h2 {
 					margin: 1rem 0 1rem 0;
 					text-align: center;
@@ -69,28 +71,67 @@ $accent-color: #001349;
 					font-weight: bold;
 					text-decoration: underline;
 				}
-				.Tech {
-					padding: 1rem;
-					display: flex;
-					flex-direction: row;
-					justify-content: space-around;
-					.TechList {
-						h3 {
-							font-size: 1.25rem;
-							font-weight: bolder;
-							padding: 0.5rem;
-						}
-						ul {
-							line-height: 1.2rem;
+				.TechContainer {
+					margin: 0.5rem;
+					background-color: $darker-accent-color;
+					padding: 1rem 0.5rem 0.5rem 0.5rem;
+					.Tech {
+						padding: 1rem;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+						.TechList {
+							h3 {
+								font-size: 1.25rem;
+								font-weight: bolder;
+								padding: 0.5rem;
+							}
+							ul {
+								line-height: 1.2rem;
 
-							list-style-type: disc;
+								list-style-type: disc;
+							}
 						}
 					}
 				}
 				.Resp {
+					margin: 0.5rem;
+
+					background-color: $darker-accent-color;
 					line-height: 1.2rem;
 					padding: 1rem;
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.ProjectViewContainer {
+		.Group {
+			.SubGroup {
+				align-content: center;
+				.SubGroup1 {
+					display: flex;
+					flex-direction: column;
+					align-content: center;
+					.Img {
+						align-self: center;
+						width: 90vw;
+					}
+					.LinkContainer {
+						.Links {
+							width: 55vw;
+							justify-content: space-between;
+						}
+					}
+				}
+				.SubGroup2 {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+				}
+				flex-direction: column;
 			}
 		}
 	}

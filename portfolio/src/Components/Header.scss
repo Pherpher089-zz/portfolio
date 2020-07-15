@@ -1,3 +1,5 @@
+$accent-color: #001349;
+
 .Header-Container {
 	height: 90vh;
 	background-image: url("../imgs/Blue_Mountains.png");
@@ -7,15 +9,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	//justify-content: space-around;
+	justify-content: space-around;
 	.Statement-Container {
 		justify-content: center;
-		height: 80%;
+		height: 50%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		h1 {
-			font-size: 2.5rem;
+			font-size: 2.3rem;
 			font-weight: bold;
 
 			text-align: center;
@@ -25,14 +27,28 @@
 			width: 70%;
 		}
 		p {
+			padding-top: 7rem;
 			color: white;
 			text-align: center;
 			font-size: 3rem;
 			width: 80%;
 		}
 	}
+	.Icons {
+		width: 10vw;
+		display: flex;
+		justify-content: space-between;
+		.Icon {
+			width: 3rem;
+			height: 3rem;
+			&:hover {
+				filter: contrast(10%);
+			}
+		}
+	}
 
 	.LearnMore {
+		cursor: pointer;
 		color: white;
 		width: 55%;
 		display: flex;

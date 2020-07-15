@@ -1,9 +1,10 @@
-$accent-color: #001349;
+$accent-color: #3b4561;
 
-.ProjectContainer {
+.ProjectsContainer {
 	color: white;
 	background-color: $accent-color;
-	padding-top: 3rem;
+	padding: 3rem 0rem;
+
 	.SectionTitle {
 		//margin-top: 2rem;
 
@@ -14,45 +15,67 @@ $accent-color: #001349;
 	}
 	.Projects {
 		display: flex;
-		text-decoration: underline;
 		text-align: center;
 		flex-wrap: wrap;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-around;
+
 		.Project {
+			align-self: center;
+			width: 75vw;
+			background-color: #2b3347;
 			margin-top: 3rem;
 			padding: 1.75rem 1rem 1rem 1rem;
 			border-radius: 0.3rem;
 			h1 {
+				padding-bottom: 1rem;
+				text-decoration: underline;
 				color: white;
 				font-size: 1.5rem;
 			}
-			.Container {
-				position: relative;
-				width: 40vw;
-				margin: 1rem;
-				.ProjectImg {
-					width: 40vw;
-				}
-				.OverLay {
-					.Text {
-						padding: 3rem;
-						text-align: center;
+			.ProjectContainer {
+				display: flex;
+				flex-direction: row-reverse;
+				.DescContainer {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					padding: 1rem;
+					.Description {
+						align-self: center;
+						font-weight: normal;
+						font-size: 1rem;
 					}
-					position: absolute;
-					color: white;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					height: 100%;
-					width: 100%;
-					opacity: 0;
-					transition: 0.5s ease;
-					background-color: black;
+					.Button {
+						margin: 1rem;
+						font-size: 0.75rem;
+						text-align: center;
+						text-decoration: none;
+						font-weight: none;
+						padding: 0.3rem 0.3rem;
+						line-height: 1rem;
+						width: 5rem;
+						height: 1rem;
+						align-self: center;
+						color: white;
+						background-color: transparent;
+						border: 1px solid white;
+						border-radius: 0.5rem;
+						&:hover {
+							cursor: pointer;
+							color: $accent-color;
+							background-color: white;
+							border: 1px solid white;
+						}
+					}
 				}
-				&:hover .OverLay {
-					opacity: 0.8;
+				.ImgContainer {
+					position: relative;
+					width: 40vw;
+					margin: 1rem;
+					.ProjectImg {
+						width: 40vw;
+					}
 				}
 			}
 		}
@@ -60,11 +83,19 @@ $accent-color: #001349;
 }
 
 @media only screen and (max-width: 800px) {
-	.ProjectContainer {
+	.ProjectsContainer {
 		.Projects {
 			.Project {
-				.ProjectImg {
-					width: 90vw;
+				.ProjectContainer {
+					flex-direction: column-reverse;
+					.ImgContainer {
+						position: relative;
+						width: 70vw;
+						margin: 1rem;
+						.ProjectImg {
+							width: 70vw;
+						}
+					}
 				}
 			}
 		}
