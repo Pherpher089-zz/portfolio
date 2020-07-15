@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HamBurger from "../imgs/HamBurger.png";
+import CT_Logo from "../imgs/CT_Logo.png";
 import "./NavBar.scss";
 
 function NavBar(props) {
