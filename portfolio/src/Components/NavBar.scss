@@ -45,6 +45,12 @@ $accent-color: #001349;
 	.link {
 		margin: 1rem 0rem 1rem 0rem;
 	}
+	.HamBurger {
+		align-self: center;
+		margin: 0rem 2rem;
+		width: 2rem;
+		height: 2rem;
+	}
 	.DropDown {
 		display: flex;
 		flex-direction: column;
@@ -59,7 +65,7 @@ $accent-color: #001349;
 			height: 100%;
 			border-bottom: 1px solid $accent-color;
 			text-align: center;
-			line-height: 3rem;
+			line-height: 5rem;
 			&:first-child {
 				border-top: 1px solid $accent-color;
 			}
@@ -89,6 +95,7 @@ $accent-color: #001349;
 			display: flex;
 			color: $accent-color;
 		}
+		.HamBurger,
 		.DropDown {
 			display: none;
 		}
