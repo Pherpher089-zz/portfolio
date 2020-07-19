@@ -16,10 +16,7 @@ function AboutMe(props) {
 						work with teams that will allow me to master my skills
 						while contributing to something greater than my self.{" "}
 					</p>
-					<a
-						href="https://drive.google.com/file/d/1dkLMzbi-DPy4-gN3SbgXaNLYehaGy6T_/view?usp=sharing"
-						target="_blank"
-					>
+					<a href="https://drive.google.com/file/d/18rIID6hMShEcII9dWTVgTJzDJigZ07pR/view?usp=sharing">
 						My Resume
 					</a>
 				</div>
