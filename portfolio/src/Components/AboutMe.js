@@ -17,7 +17,7 @@ function AboutMe(props) {
 						while contributing to something greater than my self.{" "}
 					</p>
 					<a
-						href="https://drive.google.com/file/d/1XlZlBZFMBMl892Aze5jo9v0a6CqnoQhi/view?usp=sharing"
+						href="https://drive.google.com/file/d/1dkLMzbi-DPy4-gN3SbgXaNLYehaGy6T_/view?usp=sharing"
 						target="_blank"
 					>
 						My Resume
