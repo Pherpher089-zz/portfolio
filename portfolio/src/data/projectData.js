@@ -32,26 +32,19 @@ const projectData = {
 		},
 		// {
 		// 	id: 1,
-		// 	name: "Groovn Music",
+		// 	name: "The Blown Save Podcast Site",
 		// 	img: MotherBoard,
 		// 	description:
-		// 		"A music recommendation app. Groovn music generates a recommended playlist for users based on their liked songs on their Spotify account",
+		// 		"The official site for The Blown Save Podcast",
 		// 	techUsed: [
 		// 		[
 		// 			"React.js",
 		// 			"React Hooks",
-		// 			"React Context API",
-		// 			"Apollo/GraphQL",
-		// 		],
-		// 		[
-		// 			"Node.js",
-		// 			"GraphQL",
-		// 			"Mongo Data Base",
-		// 			"Passport.js(Spotify strategy)",
-		// 		],
+		// 			"Sass",
+		// 		]
 		// 	],
 		// 	responsibilities:
-		// 		"My contribution to this project besides project planning, was the front end.I set up the React app with routes and the context.",
+		// 		"I consolted with the client to pinpoint their needs for this project and then followed up with wire frames and design mockups. After that, I deliverd an MVP for a second round of feedback. At the final stage, I expanded the product to the clients intended vison. This took several rounds of critique, feedback, and trial and error",
 		// 	links: ["", "https://github.com/Pherpher089/groovn-music-fe", ""],
 		// },
 		{
