@@ -18,7 +18,7 @@ const projectData = {
 				]
 			],
 			responsibilities:
-				"I consulted with the client to pinpoint their needs for this project and then followed up with wire frames and design mockups. After that, I delivered an MVP for a second round of feedback. At the final stage, I expanded the product to the clients intended vision. This took several rounds of critique, feedback, and trial and error",
+				"I consulted with the client to pinpoint their needs for this project and then followed up with wire frames and design mockups. After that, I delivered an MVP for a second round of feedback. At the final stage, I expanded the product to the clients intended vision. This took several rounds of critique, feedback, and trial and error.",
 			links: ["https://www.theblownsavepodcast.com/", "https://github.com/Pherpher089/The-Blown-Save", ""],
 		},
 		{
