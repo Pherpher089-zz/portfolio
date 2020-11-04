@@ -1,12 +1,28 @@
 import PotluckPlannerThumbNail from "../imgs/PotluckPlannerThumbNail.jpg";
 import StayAtHomeMomsThumbNail from "../imgs/StayAtHomeMomsThumbNail.jpg";
 import BucketListThumbNail from "../imgs/BucketListThumbNail.jpg";
-//import MotherBoard from "../imgs/MotherBoard.png";
-
+import BlownSaveThumbNail from '../imgs/BlownSavePodcastThumbNail.jpg'
 const projectData = {
 	projects: [
 		{
 			id: 0,
+			name: "The Blown Save Podcast Site",
+			img: BlownSaveThumbNail,
+			description:
+				"The official site for The Blown Save Podcast. This site was created to act as a central hub for the podcast's many different host sites. Much more to come for this website.",
+			techUsed: [
+				[
+					"React.js",
+					"React Hooks",
+					"Sass",
+				]
+			],
+			responsibilities:
+				"I consulted with the client to pinpoint their needs for this project and then followed up with wire frames and design mockups. After that, I delivered an MVP for a second round of feedback. At the final stage, I expanded the product to the clients intended vision. This took several rounds of critique, feedback, and trial and error",
+			links: ["https://www.theblownsavepodcast.com/", "https://github.com/Pherpher089/The-Blown-Save", ""],
+		},
+		{
+			id: 1,
 			name: "Potluck Planner",
 			img: PotluckPlannerThumbNail,
 			description:
@@ -30,25 +46,8 @@ const projectData = {
 				"https://github.com/Pherpher089/Potluck_Planner_Backend",
 			],
 		},
-		// {
-		// 	id: 1,
-		// 	name: "The Blown Save Podcast Site",
-		// 	img: MotherBoard,
-		// 	description:
-		// 		"The official site for The Blown Save Podcast",
-		// 	techUsed: [
-		// 		[
-		// 			"React.js",
-		// 			"React Hooks",
-		// 			"Sass",
-		// 		]
-		// 	],
-		// 	responsibilities:
-		// 		"I consolted with the client to pinpoint their needs for this project and then followed up with wire frames and design mockups. After that, I deliverd an MVP for a second round of feedback. At the final stage, I expanded the product to the clients intended vison. This took several rounds of critique, feedback, and trial and error",
-		// 	links: ["", "https://github.com/Pherpher089/groovn-music-fe", ""],
-		// },
 		{
-			id: 1,
+			id: 2,
 			name: "Bucket List App",
 			img: BucketListThumbNail,
 			description:
@@ -70,7 +69,7 @@ const projectData = {
 			links: ["", "", "https://github.com/Pherpher089/backend"],
 		},
 		{
-			id: 2,
+			id: 3,
 			name: "Stay at Home Moms",
 			img: StayAtHomeMomsThumbNail,
 			description:
