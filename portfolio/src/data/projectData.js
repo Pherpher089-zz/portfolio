@@ -2,10 +2,29 @@ import PotluckPlannerThumbNail from "../imgs/PotluckPlannerThumbNail.jpg";
 import StayAtHomeMomsThumbNail from "../imgs/StayAtHomeMomsThumbNail.jpg";
 import BucketListThumbNail from "../imgs/BucketListThumbNail.jpg";
 import BlownSaveThumbNail from '../imgs/BlownSavePodcastThumbNail.jpg'
+import HouseKeepingCentral from '../imgs/HouseKeepingCentral.jpg'
 const projectData = {
 	projects: [
 		{
 			id: 0,
+			name: "Housekeeping Central",
+			img: HouseKeepingCentral,
+			description:
+				"A small web application built with Angular that sorts the daily housekeeping room assignment as well as displays the room rates of competing hotels. This project was a solution to an actual work place inefficiency. This algorithm assigns rooms based on the amount of work per room. Essentially, it ensures that every housekeeper has an equal amount of beds rather than rooms. The algorithm is O(n^2). I started with no experience using Angular and I worked with one other developer on this project.",
+			techUsed: [
+				[
+					"Angular",
+					"Type Script",
+					"Material UI",
+					"Sass",
+				]
+			],
+			responsibilities:
+				"My task was to write the algorithm, including input and displaying output on the screen. I set up navigation and I also contributed to the styling.",
+			links: ["https://housekeeping-central.netlify.app/", "https://github.com/Pherpher089/HousekeepingCentral", ""],
+		},
+		{
+			id: 1,
 			name: "The Blown Save Podcast Site",
 			img: BlownSaveThumbNail,
 			description:
@@ -22,7 +41,7 @@ const projectData = {
 			links: ["https://www.theblownsavepodcast.com/", "https://github.com/Pherpher089/The-Blown-Save", ""],
 		},
 		{
-			id: 1,
+			id: 2,
 			name: "Potluck Planner",
 			img: PotluckPlannerThumbNail,
 			description:
@@ -47,7 +66,7 @@ const projectData = {
 			],
 		},
 		{
-			id: 2,
+			id: 3,
 			name: "Bucket List App",
 			img: BucketListThumbNail,
 			description:
@@ -69,7 +88,7 @@ const projectData = {
 			links: ["", "", "https://github.com/Pherpher089/backend"],
 		},
 		{
-			id: 3,
+			id: 4,
 			name: "Stay at Home Moms",
 			img: StayAtHomeMomsThumbNail,
 			description:

@@ -42,10 +42,13 @@ function AboutMe(props) {
 					</p>
 					<ul className="a">
 						<li>HTML</li>
-						<li>CSS/Less/Sass</li>
 						<li>Javascript ES6</li>
+						<li>TypeScript</li>
+						<li>Angular</li>
 						<li>React.js</li>
 						<li>Redux</li>
+						<li>CSS/Less/Sass</li>
+						<li>Material UI</li>
 						<li>Responsive Design</li>
 						<li>Client Side Authentication</li>
 					</ul>
